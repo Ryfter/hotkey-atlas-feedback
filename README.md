@@ -1,10 +1,14 @@
-# Hotkey Atlas
+<p align="center">
+  <img src="https://atomicego.com/proj/hotkeyatlas/assets/hotkey-atlas-logo.svg" alt="Hotkey Atlas logo: a compass rose on a keycap" width="160">
+</p>
 
-Keyboard-shortcut cheat sheets drawn as SVG, for the apps people actually use. Pick an app, pick a layout (a full keyboard, a modifier wheel, a poster, a printable mousepad), and see its Top 10, Top 25, or every shortcut. Everything exports as SVG, PNG or PDF.
+<h1 align="center">Hotkey Atlas</h1>
+
+Keyboard-shortcut cheat sheets drawn as SVG, for the apps people actually use. Pick an app, pick a layout (a full keyboard, a modifier wheel, a poster, a printable mousepad), and see its Top 10, Top 25, or every shortcut. Everything exports as SVG, PDF (vector) or PNG.
 
 - **Live site:** https://atomicego.com/proj/hotkeyatlas/
 - **Bugs, suggestions, new apps:** [open an issue](https://github.com/Ryfter/hotkey-atlas-feedback/issues/new/choose) (see [Feedback and bug reports](#feedback-and-bug-reports))
-- **Status:** proof of concept and a work in progress. Expect rough edges.
+- **Status:** it started as a proof of concept, works well now, and keeps growing.
 
 ## Why this exists
 
@@ -16,10 +20,14 @@ I needed example apps. Omarchy was the obvious one because of its enormous numbe
 
 ## What it does
 
-- **37 apps** across Office, Google, code editors, education, AI tools, browsers, creative and dev tools, and communication apps, with about 5,500 shortcuts in total.
+- **49 command sets** across Office, Google, code editors, education, AI tools, browsers, creative and dev tools, communication apps and mice, with about 6,700 shortcuts in total.
 - **Top 10, Top 25, or All** shortcuts for each app, plus **My list**: build your own and share it as a link.
 - **Nine layouts**, including full and compact keyboards, a modifier wheel, category cards, a one-page poster, and printable 9.25 x 8 in mousepad templates.
-- **Exports** to SVG, PNG and PDF, or print the current view. A bulk export zips many apps and layouts at once.
+- **Exports** to SVG, PDF (vector) and PNG, or print the current view. A bulk export zips many apps and layouts at once.
+- **Import espanso matches**: drop your espanso `match/*.yml` files (or paste text) to get a searchable, sortable, printable *Text expansions* table with duplicate-trigger flags and masked secrets. It runs entirely in your browser and nothing is uploaded. You can also export My list as an espanso match file.
+- **Map Maker:** design your own colour-coded keyboard shortcut poster. Pick a keyboard layout, edit labels, paint keys, name a legend, link keys to commands from any app or fill a layer from an app's top commands, then export SVG (real text, the default) or a true vector PDF, PNG 1x/2x/4x (raster) or print on Letter, A4 or poster paper. On phones pick a 1 or 2 column view. It runs in your browser and nothing is uploaded; sheets are saved on your device only if you allow Preferences, and always downloadable as `.json`.
+- **Mice:** mouse buttons, wheels and gestures are first-class. Open an app with mouse bindings (Blender, browsers, Logitech Options+ / G-series defaults) in **Mouse view**, pick a mouse drawing (3-button, 5-button, gaming grid, productivity mouse) and export it as SVG.
+- **Hotkey Atlas Standard (draft v0.1):** an open JSON + SVG format so any app, vendor or user can publish, export and import hotkeys (keyboard and mouse), with JSON Schemas, converters and examples. Accounts and verified publishers are planned but not built yet.
 - **Platform variants** (Windows/Linux and macOS) where an app has them.
 - **Combined views** for VS Code and its forks (Cursor, Kiro, Antigravity).
 - **Light touches of animation**, light and dark themes, and a phone-friendly layout.
@@ -29,19 +37,21 @@ I needed example apps. Omarchy was the obvious one because of its enormous numbe
 
 **Office:** Microsoft Excel, Power BI, Microsoft PowerPoint, Microsoft Word
 
-**Google:** Google Docs, Google Sheets, Google Slides, Google Vids, NotebookLM
+**Google:** Gmail, Google Docs, Google Sheets, Google Slides, Google Vids, NotebookLM
 
 **Code editors:** Google Antigravity, Kiro, Visual Studio Code, Cursor
 
 **Education:** Canvas LMS, Pressbooks
 
-**AI:** ChatGPT, Claude, Gemini, Grok Bot, Perplexity
+**AI:** ChatGPT, Claude, Clairvoyance AI, Gemini, Grok Bot, Perplexity
 
 **Browsers:** Brave, Google Chrome, Perplexity Comet, Microsoft Edge, Mozilla Firefox
 
-**Creative and dev:** Omarchy, Unity Editor, Blender, Herdr, LM Studio, Obsidian, Ollama, plus a small Vim example set
+**Creative and dev:** Omarchy, Unity Editor, Blender, Docker Desktop, espanso, Herdr, LM Studio, Obsidian, Ollama, WordPress, plus the terminal tools Omarchy uses (tmux, Ghostty, Neovim) and a small Vim example set
 
 **Comms:** Discord, Panopto, Microsoft Teams, Zoom
+
+**Mice and devices:** Logitech Options+ (MX Master 3S/4, MX Anywhere 3S, Lift defaults), Logitech gaming mice (G502, G604, G600 default buttons), Blender mouse controls, browser mouse shortcuts (Chrome, Firefox)
 
 Grok (the grok.com web app) and Meta Muse were researched, but neither publishes keyboard shortcuts, so they are listed as info-only.
 
@@ -107,7 +117,7 @@ Issues are public, so please don't include personal information.
 
 ## Known limits
 
-- Proof of concept. The data was gathered by AI agents with source links and spot-checked by script, not proofread line by line by a person.
+- The shortcut data was gathered by AI agents with source links and spot-checked by script, not proofread line by line by a person.
 - Some vendors publish little or nothing about shortcuts, so a few apps have thin lists.
 - Unity 6 has no printed default-shortcut table, so its list combines the last full official table with newer Unity 6 pages. Omarchy covers Hyprland desktop bindings only.
 
