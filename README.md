@@ -8,7 +8,7 @@ Keyboard-shortcut cheat sheets drawn as SVG, for the apps people actually use. P
 
 - **Live site:** https://atomicego.com/proj/hotkeyatlas/
 - **Bugs, suggestions, new apps:** [open an issue](https://github.com/Ryfter/hotkey-atlas-feedback/issues/new/choose) (see [Feedback and bug reports](#feedback-and-bug-reports))
-- **Status:** it started as a proof of concept, works well now, and keeps growing.
+- **Status:** live, working well, and still growing.
 
 ## Why this exists
 
@@ -20,38 +20,47 @@ I needed example apps. Omarchy was the obvious one because of its enormous numbe
 
 ## What it does
 
-- **49 command sets** across Office, Google, code editors, education, AI tools, browsers, creative and dev tools, communication apps and mice, with about 6,700 shortcuts in total.
+- **59 command sets** across Office, Google, code editors, education, AI, browsers, creative and dev tools, comms, healthcare, business apps and mice, with about 7,700 shortcuts in total.
 - **Top 10, Top 25, or All** shortcuts for each app, plus **My list**: build your own and share it as a link.
-- **Nine layouts**, including full and compact keyboards, a modifier wheel, category cards, a one-page poster, and printable 9.25 x 8 in mousepad templates.
-- **Exports** to SVG, PDF (vector) and PNG, or print the current view. A bulk export zips many apps and layouts at once.
-- **Import espanso matches**: drop your espanso `match/*.yml` files (or paste text) to get a searchable, sortable, printable *Text expansions* table with duplicate-trigger flags and masked secrets. It runs entirely in your browser and nothing is uploaded. You can also export My list as an espanso match file.
-- **Map Maker:** design your own colour-coded keyboard shortcut poster. Pick a keyboard layout, edit labels, paint keys, name a legend, link keys to commands from any app or fill a layer from an app's top commands, then export SVG (real text, the default) or a true vector PDF, PNG 1x/2x/4x (raster) or print on Letter, A4 or poster paper. On phones pick a 1 or 2 column view. It runs in your browser and nothing is uploaded; sheets are saved on your device only if you allow Preferences, and always downloadable as `.json`.
-- **Mice:** mouse buttons, wheels and gestures are first-class. Open an app with mouse bindings (Blender, browsers, Logitech Options+ / G-series defaults) in **Mouse view**, pick a mouse drawing (3-button, 5-button, gaming grid, productivity mouse) and export it as SVG.
-- **Hotkey Atlas Standard (draft v0.1):** an open JSON + SVG format so any app, vendor or user can publish, export and import hotkeys (keyboard and mouse), with JSON Schemas, converters and examples. Accounts and verified publishers are planned but not built yet.
-- **Platform variants** (Windows/Linux and macOS) where an app has them.
-- **Combined views** for VS Code and its forks (Cursor, Kiro, Antigravity).
-- **Light touches of animation**, light and dark themes, and a phone-friendly layout.
+- **Ten layouts**, including full and compact keyboards, a modifier wheel, category cards, a one-page poster and printable 9.25 x 8 in mousepads.
+- **Custom mousepad from My list:** turn your own picks into a printable mousepad. A **clear mousepad** link in the header starts it over.
+- **Landscape auto-fit poster:** one landscape page that sizes itself to fit however many shortcuts you choose.
+- **Print-friendly by default:** sheets print light to save ink, with a dark toggle if you want it.
+- **Exports** to SVG and vector PDF (preferred), or PNG; bulk export zips many apps and layouts at once.
+- **Import espanso matches:** drop in your espanso files to get a searchable, printable table of text expansions. It runs in your browser and nothing is uploaded.
+- **Map Maker:** design your own colour-coded shortcut poster, link keys to commands from any app, and export it as SVG or vector PDF.
+- **Mice:** buttons, wheels and gestures get their own Mouse view with several mouse drawings.
+- **Hotkey Atlas Standard (draft v0.1):** an open JSON + SVG format so any app, vendor or user can publish and import hotkeys.
+- **Platform variants** (Windows/Linux and macOS), and combined views for VS Code and its forks.
+- **Light and dark themes** with one amber accent, light animation, and a phone-friendly layout with zoom.
+- **Searchable app picker**, plus bug and suggestion links in the footer.
 - Every shortcut links back to its source, and a freshness badge shows how old the data is.
 
 ## Supported apps
 
-**Office:** Microsoft Excel, Power BI, Microsoft PowerPoint, Microsoft Word
+59 command sets/apps with about 7,700 shortcuts (7,713 at last count):
+
+**Office:** Microsoft Excel, Microsoft PowerPoint, Microsoft Word, Power BI
 
 **Google:** Gmail, Google Docs, Google Sheets, Google Slides, Google Vids, NotebookLM
 
-**Code editors:** Google Antigravity, Kiro, Visual Studio Code, Cursor
+**Code editors:** Cursor, Google Antigravity, Kiro, Visual Studio Code
 
 **Education:** Canvas LMS, Pressbooks
 
-**AI:** ChatGPT, Claude, Clairvoyance AI, Gemini, Grok Bot, Perplexity
+**AI:** ChatGPT, Clairvoyance AI, Claude, Gemini, Grok Bot, Perplexity, Unsloth
 
-**Browsers:** Brave, Google Chrome, Perplexity Comet, Microsoft Edge, Mozilla Firefox
+**Browsers:** Brave, Google Chrome, Microsoft Edge, Mozilla Firefox, Perplexity Comet, Chrome and Firefox mouse and wheel controls
 
-**Creative and dev:** Omarchy, Unity Editor, Blender, Docker Desktop, espanso, Herdr, LM Studio, Obsidian, Ollama, WordPress, plus the terminal tools Omarchy uses (tmux, Ghostty, Neovim) and a small Vim example set
+**Creative and dev:** Adobe Lightroom Classic, Adobe Photoshop, Adobe Premiere Pro, Blender, Blender mouse controls, DaVinci Resolve, Docker Desktop, espanso, Ghostty, Herdr, LM Studio, Neovim, Obsidian, Ollama, Omarchy, tmux, Unity Editor, WordPress, and a small Vim example set
 
-**Comms:** Discord, Panopto, Microsoft Teams, Zoom
+**Comms:** Discord, Microsoft Teams, Panopto, Zoom
 
-**Mice and devices:** Logitech Options+ (MX Master 3S/4, MX Anywhere 3S, Lift defaults), Logitech gaming mice (G502, G604, G600 default buttons), Blender mouse controls, browser mouse shortcuts (Chrome, Firefox)
+**Healthcare:** Epic (Hyperspace / Hyperdrive)
+
+**Business apps:** Jira, QuickBooks Desktop, QuickBooks Online, Salesforce
+
+**Mice and devices:** Logitech G HUB default button mappings, Logitech Options+ default button mappings
 
 Grok (the grok.com web app) and Meta Muse were researched, but neither publishes keyboard shortcuts, so they are listed as info-only.
 
@@ -94,7 +103,7 @@ layout ───────┘                                               �
 
 All feedback goes through **GitHub Issues** on this public repo: **https://github.com/Ryfter/hotkey-atlas-feedback/issues/new/choose**
 
-The app's **Report a bug**, **Suggest** and **Request or fix a command set** links open these forms with the app, layout, mode and browser already filled in. You can also open them directly:
+The app's **Report a bug** and **Suggest** (footer) and **Request or fix a command set** (beside the command-set picker) links open these forms with the app, layout, mode and browser already filled in. You can also open them directly:
 
 | Form | Use it for |
 |---|---|
